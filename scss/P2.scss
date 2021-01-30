@@ -1,0 +1,57 @@
+@import "./partials/config";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: url("https://4.bp.blogspot.com/-zO8hwvt7iMk/XAVxt4aoQvI/AAAAAAAAwa4/D5m3ApKkAAABZteHWWv_5uzTn8X7JaDxgCPcBGAYYCw/s1600/7T9364v.gif");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .table-container {
+    background: rgba(rgb(114, 114, 114), 0.5);
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 20px;
+
+  td {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .s1 {
+    background: rgb(138, 138, 138);
+    color: rgb(73, 183, 187);
+  }
+
+  .s2 {
+    background: rgb(156, 89, 13);
+    color: rgb(233, 137, 59);
+  }
+}
