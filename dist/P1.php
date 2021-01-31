@@ -21,7 +21,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim debitis commodi deserunt fugiat quo ut nesciunt voluptate, architecto ipsam.
             </p>
         </div>
-        <form action="#" method="post">
+        <form action="P1-form.php" method="post">
             <div class="student-details">
                 <div class="student-details-container">
                     <div class="student-details-title">
@@ -105,7 +105,7 @@
                     <div class="medical-details-input">
                         <div class="input-special">
                             <h3 class="special-input"><span class="asterisk">*</span>Plese indicate any recurring medical conditions</h3>
-                            <input type="text" name="medical" id="medical-field" autocomplete="off" required>
+                            <input type="text" name="medical" id="medical-field" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -119,15 +119,6 @@
         <footer id="main-footer">
             <h3>&copy; 2021, Charles King</h3>
         </footer>
-
-        <?php
-
-        foreach ($_POST as $key => $value) {
-            echo "Field " . htmlspecialchars($key) . " is " . htmlspecialchars($value) . "<br>";
-        }
-        ?>
-
-
 
     </main>
 </body>
