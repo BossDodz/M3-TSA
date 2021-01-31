@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
+
+#main-header {
+  width: 100%;
+  background: #a01414;
+  color: whitesmoke; }
+  #main-header .bg-header {
+    font-family: "Roboto Slab", serif;
+    padding: 1.5rem;
+    font-size: 20px; }
+
+#main-content {
+  height: calc(100vh - 80px); }
+  #main-content div {
+    margin-bottom: 1.5rem; }
+  #main-content .title {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    padding: 15px; }
+    #main-content .title .registration-form-title {
+      text-transform: uppercase; }
+    #main-content .title .instructions {
+      margin-top: 1.1rem;
+      font-size: smaller; }
+  #main-content .student-details {
+    padding: 0 15px; }
+    #main-content .student-details .student-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px; }
+      #main-content .student-details .student-details-container .student-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: #a01414;
+        color: whitesmoke;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px; }
+        #main-content .student-details .student-details-container .student-details-title > h1 {
+          margin-left: 1.3rem; }
+      #main-content .student-details .student-details-container .student-details-input .input-fields {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+        #main-content .student-details .student-details-container .student-details-input .input-fields input {
+          width: 30%;
+          font-size: 20px; }
+      #main-content .student-details .student-details-container .student-details-input .input-options {
+        margin-left: 2%; }
+      #main-content .student-details .student-details-container .student-details-input .course {
+        margin-left: 2%; }
+      #main-content .student-details .student-details-container .student-details-input .input-special {
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 2%; }
+        #main-content .student-details .student-details-container .student-details-input .input-special .asterisk {
+          color: red; }
+        #main-content .student-details .student-details-container .student-details-input .input-special #sibling-field {
+          margin-top: 10px;
+          width: 60%;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid black;
+          font-size: 20px; }
+  #main-content .school-information {
+    padding: 15px; }
+    #main-content .school-information .school-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px; }
+      #main-content .school-information .school-details-container .school-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: #a01414;
+        color: whitesmoke;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px; }
+        #main-content .school-information .school-details-container .school-details-title > h1 {
+          margin-left: 1.3rem; }
+      #main-content .school-information .school-details-container .school-details-input .input-fields {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        #main-content .school-information .school-details-container .school-details-input .input-fields input {
+          width: 20%;
+          font-size: 20px; }
+          #main-content .school-information .school-details-container .school-details-input .input-fields input[type="text"] {
+            width: 55%; }
+      #main-content .school-information .school-details-container .school-details-input .input-options {
+        display: flex;
+        flex-flow: row wrap;
+        width: 55%;
+        align-items: center;
+        justify-content: space-around; }
+        #main-content .school-information .school-details-container .school-details-input .input-options [type="number"] {
+          font-size: 13px;
+          width: 70px; }
+      #main-content .school-information .school-details-container .input-special {
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 2%; }
+        #main-content .school-information .school-details-container .input-special .asterisk {
+          color: red; }
+        #main-content .school-information .school-details-container .input-special #sibling-field {
+          margin-top: 10px;
+          width: 60%;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid black;
+          font-size: 20px; }
+  #main-content .medical-information {
+    padding: 15px; }
+    #main-content .medical-information .medical-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px; }
+      #main-content .medical-information .medical-details-container .medical-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: #a01414;
+        color: whitesmoke;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px; }
+        #main-content .medical-information .medical-details-container .medical-details-title > h1 {
+          margin-left: 1.3rem; }
+      #main-content .medical-information .medical-details-container .input-special {
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 2%; }
+        #main-content .medical-information .medical-details-container .input-special .asterisk {
+          color: red; }
+        #main-content .medical-information .medical-details-container .input-special #medical-field {
+          margin-top: 10px;
+          width: 80%;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid black;
+          font-size: 20px; }
+
+.submit-button {
+  margin: 1.2rem 0 1.2rem 0;
+  padding: 15px; }
+  .submit-button #button {
+    background: #a01414;
+    color: whitesmoke;
+    width: 150px;
+    height: 40px;
+    font-size: 20px; }
+
+#main-footer {
+  width: 100%;
+  background: #a01414;
+  color: whitesmoke;
+  height: 80px;
+  margin-top: 90px; }
+  #main-footer > * {
+    font-family: "Roboto Slab", serif;
+    padding: 1.5rem;
+    font-size: 20px; }

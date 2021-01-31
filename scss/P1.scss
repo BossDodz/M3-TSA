@@ -1,0 +1,244 @@
+@import "./partials/config";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-header {
+  width: 100%;
+  background: $header-color;
+  color: $header-text-color;
+
+  .bg-header {
+    font-family: $header-text;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+}
+
+#main-content {
+  height: calc(100vh - 80px);
+
+  div {
+    margin-bottom: 1.5rem;
+  }
+  .title {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    padding: 15px;
+    .registration-form-title {
+      text-transform: uppercase;
+    }
+    .instructions {
+      margin-top: 1.1rem;
+      font-size: smaller;
+    }
+  }
+
+  .student-details {
+    padding: 0 15px;
+    .student-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px;
+
+      .student-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: $header-color;
+        color: $header-text-color;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px;
+
+        & > h1 {
+          margin-left: 1.3rem;
+        }
+      }
+
+      .student-details-input {
+        .input-fields {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          & input {
+            width: 30%;
+            font-size: 20px;
+          }
+        }
+
+        .input-options {
+          margin-left: 2%;
+        }
+
+        .course {
+          margin-left: 2%;
+        }
+
+        .input-special {
+          font-style: italic;
+          font-size: 15px;
+          padding-left: 2%;
+          .asterisk {
+            color: red;
+          }
+
+          #sibling-field {
+            margin-top: 10px;
+            width: 60%;
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .school-information {
+    padding: 15px;
+    .school-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px;
+
+      .school-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: $header-color;
+        color: $header-text-color;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px;
+
+        & > h1 {
+          margin-left: 1.3rem;
+        }
+      }
+
+      .school-details-input {
+        .input-fields {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          & input {
+            width: 20%;
+            font-size: 20px;
+
+            &[type="text"] {
+              width: 55%;
+            }
+          }
+        }
+
+        .input-options {
+          display: flex;
+          flex-flow: row wrap;
+          width: 55%;
+          align-items: center;
+          justify-content: space-around;
+
+          [type="number"] {
+            font-size: 13px;
+            width: 70px;
+          }
+        }
+      }
+
+      .input-special {
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 2%;
+        .asterisk {
+          color: red;
+        }
+
+        #sibling-field {
+          margin-top: 10px;
+          width: 60%;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid black;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .medical-information {
+    padding: 15px;
+    .medical-details-container {
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: 20px;
+
+      .medical-details-title {
+        font-size: 0.7rem;
+        margin-top: 25px;
+        padding: 0;
+        background: $header-color;
+        color: $header-text-color;
+        padding: 15px;
+        width: 70%;
+        border-bottom-right-radius: 100px;
+
+        & > h1 {
+          margin-left: 1.3rem;
+        }
+      }
+
+      .input-special {
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 2%;
+        .asterisk {
+          color: red;
+        }
+
+        #medical-field {
+          margin-top: 10px;
+          width: 80%;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid black;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.submit-button {
+  margin: 1.2rem 0 1.2rem 0;
+  padding: 15px;
+
+  #button {
+    background: $header-color;
+    color: $header-text-color;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+#main-footer {
+  width: 100%;
+  background: $header-color;
+  color: $header-text-color;
+  height: 80px;
+  margin-top: 90px;
+
+  & > * {
+    font-family: $header-text;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+}
