@@ -16,8 +16,8 @@
 <body>
     <header id="main-header">
         <div class="headings">
-            <h1 class="bg-header"><span class="bg-header-text">Ki</span>Bonnaci</h1>
-            <h3 class="sm-header">A simple fibonnaci sequence generator</h3>
+            <h1 class="bg-header"><span class="bg-header-text">Ki</span>Bonacci</h1>
+            <h3 class="sm-header">A simple fibonacci sequence generator</h3>
         </div>
     </header>
     <main id="main-content">
