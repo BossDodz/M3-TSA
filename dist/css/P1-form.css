@@ -45,6 +45,9 @@
         border-bottom-right-radius: 100px; }
         #main-content .student-details .student-details-container .student-details-title > h1 {
           margin-left: 1.3rem; }
+      #main-content .student-details .student-details-container .student-details-input .img {
+        width: 250px;
+        height: 250px; }
       #main-content .student-details .student-details-container .student-details-input .input-fields {
         padding-left: 2%; }
         #main-content .student-details .student-details-container .student-details-input .input-fields #address-field {
@@ -53,23 +56,12 @@
         #main-content .student-details .student-details-container .student-details-input .input-fields input {
           width: 30%;
           font-size: 20px; }
-      #main-content .student-details .student-details-container .student-details-input .input-options {
-        margin-left: 2%; }
-      #main-content .student-details .student-details-container .student-details-input .course {
-        margin-left: 2%; }
-      #main-content .student-details .student-details-container .student-details-input .input-special {
+      #main-content .student-details .student-details-container .input-special {
         font-style: italic;
         font-size: 15px;
         padding-left: 2%; }
-        #main-content .student-details .student-details-container .student-details-input .input-special .asterisk {
+        #main-content .student-details .student-details-container .input-special .asterisk {
           color: red; }
-        #main-content .student-details .student-details-container .student-details-input .input-special #sibling-field {
-          margin-top: 10px;
-          width: 60%;
-          outline: none;
-          border: 0;
-          border-bottom: 1px solid black;
-          font-size: 20px; }
   #main-content .school-information {
     padding: 15px; }
     #main-content .school-information .school-details-container {
@@ -88,25 +80,7 @@
         #main-content .school-information .school-details-container .school-details-title > h1 {
           margin-left: 1.3rem; }
       #main-content .school-information .school-details-container .school-details-input .input-fields {
-        display: flex;
-        align-items: center;
-        justify-content: space-around; }
-        #main-content .school-information .school-details-container .school-details-input .input-fields.form-input {
-          width: 100%; }
-        #main-content .school-information .school-details-container .school-details-input .input-fields input {
-          width: 20%;
-          font-size: 20px; }
-          #main-content .school-information .school-details-container .school-details-input .input-fields input[type="text"] {
-            width: 55%; }
-      #main-content .school-information .school-details-container .school-details-input .input-options {
-        display: flex;
-        flex-flow: row wrap;
-        width: 55%;
-        align-items: center;
-        justify-content: space-around; }
-        #main-content .school-information .school-details-container .school-details-input .input-options [type="number"] {
-          font-size: 13px;
-          width: 70px; }
+        padding-left: 2%; }
       #main-content .school-information .school-details-container .input-special {
         font-style: italic;
         font-size: 15px;
@@ -173,8 +147,13 @@
     font-size: 20px; }
 
 .span {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 15px; }
 
-#sibling-span {
+#sibling-field {
+  margin-top: 10px;
+  width: 60%;
+  outline: none;
+  border: 0;
   border-bottom: 1px solid black;
-  width: 60%; }
+  font-size: 20px; }

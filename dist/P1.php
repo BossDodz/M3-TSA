@@ -18,10 +18,10 @@
         <div class="title">
             <h1 class="registration-form-title">Student Registration Form</h1>
             <p class="instructions">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim debitis commodi deserunt fugiat quo ut nesciunt voluptate, architecto ipsam.
+                Duly accomplish the resgistration form with correct and honest details. Fields under asterisks are optional.
             </p>
         </div>
-        <form action="P1-form.php" method="post">
+        <form action="P1-form.php" method="post" enctype="multipart/form-data">
             <div class="student-details">
                 <div class="student-details-container">
                     <div class="student-details-title">
@@ -30,11 +30,14 @@
                     <div class="student-details-input">
 
                         <div class="input-fields">
-                            <input type="text" autocomplete="off" name="first-name" required placeholder="First Name">
-
-                            <input type="text" autocomplete="off" name="middle-name" required placeholder="Middle Name">
-
-                            <input type="text" autocomplete="off" name="last-name" required placeholder="Last Name">
+                            <div class="name-field"><input type="text" autocomplete="off" name="first-name" required placeholder="First Name">
+                                <input type="text" autocomplete="off" name="middle-name" required placeholder="Middle Name">
+                                <input type="text" autocomplete="off" name="last-name" required placeholder="Last Name"></br>
+                                <input type="text" autocomplete="off" name="address" placeholder="Address" id="address-field" required><br><br>
+                                <div class="img-container">
+                                    Select your photo: <input type="file" name="image" id="">
+                                </div>
+                            </div>
                         </div>
                         <div class="input-options">
                             <div class="radios">
