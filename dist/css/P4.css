@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0; }
+
+#main-header {
+  background: black; }
+
+.headings {
+  padding: 1.4rem;
+  margin-left: 15%;
+  color: whitesmoke; }
+  .headings .bg-header-text {
+    color: #f6961c; }
+
+#main-content .container {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: auto; }
+  #main-content .container .inputs {
+    padding: 1.4rem;
+    margin-left: 15%;
+    font-size: 15px; }
+    #main-content .container .inputs .label-limit {
+      font-size: 20px; }
+      #main-content .container .inputs .label-limit .limit-text {
+        color: #f6961c; }
+    #main-content .container .inputs .limit-btn {
+      width: 80px;
+      height: 30px;
+      color: whitesmoke;
+      background: black;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      text-transform: uppercase; }
+      #main-content .container .inputs .limit-btn:hover {
+        background: #f6961c;
+        color: black;
+        transition: 0.2s ease-out; }
+
+#main-content .fact-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 0 auto; }
+  #main-content .fact-container .res {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: black; }
+  #main-content .fact-container .num {
+    font-weight: bold;
+    color: #f6961c; }
