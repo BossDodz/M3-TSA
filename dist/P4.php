@@ -42,7 +42,7 @@
                 }
 
                 echo "<div class='fact-container'>";
-                echo "<span class='res text'>The K-th number factorial is <span class='num'>" . factorial($number) . "</span></span>";
+                echo "<span class='res text'>The K-th number (<span class='num'>$number</span>) factorial is <span class='num'>" . factorial($number) . "</span></span>";
             }
             ?>
         </div>
