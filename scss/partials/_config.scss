@@ -8,5 +8,12 @@ $yellow: yellow;
 // P1
 
 $header-color: rgb(160, 20, 20);
+$kbon-text-color: #f6961c;
 $header-text-color: whitesmoke;
 $header-text: "Roboto Slab", serif;
+
+// Mixins
+
+@mixin easeOut() {
+  transition: 0.2s ease-out;
+}

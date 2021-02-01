@@ -1,0 +1,87 @@
+@import "./partials/config";
+
+* {
+  box-sizing: border-box;
+  font-family: $main-font;
+  padding: 0;
+  margin: 0;
+}
+
+#main-header {
+  background: black;
+}
+
+.headings {
+  padding: 1.4rem;
+  margin-left: 15%;
+  color: whitesmoke;
+
+  .bg-header-text {
+    color: $kbon-text-color;
+  }
+}
+
+#main-content {
+  .container {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: auto;
+
+    .inputs {
+      padding: 1.4rem;
+      margin-left: 15%;
+      font-size: 15px;
+
+      .label-limit {
+        font-size: 20px;
+        .limit-text {
+          color: $kbon-text-color;
+        }
+      }
+
+      .limit-btn {
+        width: 80px;
+        height: 30px;
+        color: whitesmoke;
+        background: black;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+          background: $kbon-text-color;
+          color: black;
+          @include easeOut;
+        }
+      }
+    }
+
+    .fib-container {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: 50%;
+      height: auto;
+      border: 2px solid black;
+      border-radius: 20px;
+      margin: 0 auto;
+
+      .num {
+        padding: 15px;
+        font-size: 20px;
+
+        &.lnum {
+          font-size: 25px;
+          font-weight: bold;
+          color: $kbon-text-color;
+        }
+      }
+    }
+  }
+}
+
+.fa-arrow-left,
+.term {
+  color: black;
+}
