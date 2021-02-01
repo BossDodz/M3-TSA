@@ -80,7 +80,7 @@ move_uploaded_file($_FILES["image"]["tmp_name"], $img_name);
 
                     <div class="input-special">
                         <h3 class="special-input"><span class="asterisk">*</span>Plese indicate any academic honors, if applicable</h3>
-                        <?php echo "<span id='sibling-field' class='span'>" . $value_arr["siblings"] . "</span>"; ?>
+                        <?php echo "<span id='sibling-field' class='span'>" . $value_arr["honors"] . "</span>"; ?>
                     </div>
                 </div>
             </div>
