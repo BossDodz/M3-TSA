@@ -30,26 +30,28 @@
                 </form>
             </div>
             <?php
-            $limit = $_POST["limit-val"];
+            if (isset($_POST['limit-val'])) {
+                $limit = $_POST["limit-val"];
 
-            echo "<div class='fib-container'>";
-            $fnum = 1;
-            $snum = 1;
+                echo "<div class='fib-container'>";
+                $fnum = 1;
+                $snum = 1;
 
-            echo "<span class='num fnum'>" . $fnum . "</span><span class='num'>" . $snum . "</span>";
+                echo "<span class='num fnum'>" . $fnum . "</span><span class='num'>" . $snum . "</span>";
 
-            for ($i = 0; $i < $limit - 2; ++$i) {
-                $sum = $fnum + $snum;
-                if ($i === $limit - 3) {
-                    echo "<span class='num lnum'>$sum " . '<i class="fas fa-arrow-left"></i> Kth<span class="term">-term</span>' . "</span>";
-                } else {
-                    echo "<span class='num'>$sum</span>";
+                for ($i = 0; $i < $limit - 2; ++$i) {
+                    $sum = $fnum + $snum;
+                    if ($i === $limit - 3) {
+                        echo "<span class='num lnum'>$sum " . '<i class="fas fa-arrow-left"></i> Kth<span class="term">-term</span>' . "</span>";
+                    } else {
+                        echo "<span class='num'>$sum</span>";
+                    }
+                    $fnum = $snum;
+                    $snum = $sum;
                 }
-                $fnum = $snum;
-                $snum = $sum;
-            }
 
-            echo "</div>";
+                echo "</div>";
+            }
 
             ?>
         </div>

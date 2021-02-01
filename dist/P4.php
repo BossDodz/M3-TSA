@@ -30,19 +30,20 @@
                 </form>
             </div>
             <?php
-            $number = $_POST["number-val"];
-            function factorial($number)
-            {
-                if ($number === 1) {
-                    return 1;
-                } else {
-                    return $number * factorial($number - 1);
+            if (isset($_POST['number-val'])) {
+                $number = $_POST["number-val"];
+                function factorial($number)
+                {
+                    if ($number === 1) {
+                        return 1;
+                    } else {
+                        return $number * factorial($number - 1);
+                    }
                 }
+
+                echo "<div class='fact-container'>";
+                echo "<span class='res text'>The K-th number factorial is <span class='num'>" . factorial($number) . "</span></span>";
             }
-
-            echo "<div class='fact-container'>";
-            echo "<span class='res text'>The K-th number factorial is <span class='num'>" . factorial($number) . "</span></span>";
-
             ?>
         </div>
     </main>
